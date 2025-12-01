@@ -3,7 +3,10 @@ Configuration settings for the application
 """
 import os
 from typing import Optional
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
 class Settings:
     # Database
     DATABASE_URL: str = os.getenv(
