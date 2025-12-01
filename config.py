@@ -8,7 +8,7 @@ class Settings:
     # Database
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL",
-        "postgresql://neondb_owner:npg_xNfEGuCFsc71@ep-lingering-salad-a1grzqv0-pooler.ap-southeast-1.aws.neon.tech/neondb"
+        "postgresql://dummy_owner:dummy_pass@dummy.aws.neon.tech/neondb"
     )
     
     # Server
