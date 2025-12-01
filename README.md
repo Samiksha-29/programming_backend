@@ -4,12 +4,8 @@ A powerful FastAPI-based backend for real-time collaborative code editing with W
 
 ## 🔗 Links
 
-- **Frontend Repository:** [Add frontend repository link here]
-- **Live Demo:** [Add demo link here]
-
-## 📸 Screenshots
-
-[Add screenshots here]
+- **Frontend Repository:** (https://github.com/Samiksha-29/programming_backend/)
+- **Live Demo:** (https://drive.google.com/file/d/1I6JugoB_wole--ySCJj6jVbc8WQt6U28/view?usp=sharing)
 
 ## ✨ Features
 
@@ -103,14 +99,6 @@ python -c "from db.database import engine; from db.models import Base; Base.meta
 ```bash
 # Development mode with auto-reload
 uvicorn main:app --reload --port 8000
-
-# Or use the provided scripts
-# Windows:
-start.bat
-
-# Linux/Mac:
-./start.sh
-```
 
 The API will be available at: `http://localhost:8000`
 
@@ -265,23 +253,6 @@ pytest test_api.py::test_create_room
 uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
 ```
 
-### Using Gunicorn
-
-```bash
-gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
-```
-
-### Docker Deployment
-
-```dockerfile
-FROM python:3.9-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
-
 ## 🔒 Security
 
 - **Input Validation:** Pydantic schemas validate all inputs
@@ -291,13 +262,12 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 - **Code Execution Sandboxing:** Limited Python execution environment
 
 ## ⚡ Performance
-
 - WebSocket connection pooling per room
 - Database query optimization with proper indexing
 - Async/await for non-blocking operations
 - Connection management for PostgreSQL
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Cannot connect to database
 - Verify PostgreSQL is running
@@ -355,17 +325,6 @@ lsof -ti:8000 | xargs kill -9
 - [ ] Git integration
 - [ ] Collaborative debugging tools
 
-## 📝 License
-
-MIT License - See LICENSE file for details
-
-## 👨‍💻 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📧 Contact
-
-For questions or support, please open an issue in the repository.
 
 ## 🙏 Acknowledgments
 
